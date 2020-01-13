@@ -1,0 +1,60 @@
+class Epam_employee
+{
+	private int employee_id;
+	private double salary;
+	private String desk_number;
+	private String name;
+	Epam_employee(int employee_id,double salary,String desk_number,String name)
+	{
+		this.employee_id=employee_id;
+		this.salary=salary;
+		this.desk_number=desk_number;
+		this.name=name;
+	}
+	public void setemployee_id(int employee_id){
+      		this.employee_id=employee_id;
+	}
+	
+	public int getemployee_id(){
+		return employee_id;
+	}
+
+	public void setsalary(double salary){
+      		this.salary=salary;
+	}
+	
+	public double getsalary(){
+		return salary;
+	}
+	public void setdesk_number(String desk_number){
+      		this.desk_number=desk_number;
+	}
+	
+	public String getdesk_number(){
+		return desk_number;
+	}
+	public void setname(String name){
+      		this.name=name;
+	}
+	
+	public String getname(){
+		return name;
+	}
+
+}
+class driver
+{
+	public static void main(String Args[])
+	{
+	Epam_employee obj=new Epam_employee(8521,693.2,11FU30844,"ramesh");
+	obj.setsalary(8963.2);
+	obj.setname("ravi");
+	obj.setdesk_number("11FU20756");
+	obj.setemployee_id(89632);
+	System.out.println(obj.getname());
+	System.out.println(obj.getemployee_id());
+	System.out.println(obj.getdesk_number());
+	System.out.println(obj.getsalary());
+	}
+}
+      

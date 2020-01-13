@@ -1,0 +1,54 @@
+abstract class Car
+{
+	
+	abstract void autodrive();
+	Car(String color)
+	{
+	this.color=color;
+	}
+	
+	String getColor()
+	{
+	return color;
+	}
+
+}
+
+class Benz extends Car
+{ 
+    double price; 
+      
+    public Benz(String color,double price) { 
+        super(color); 
+        System.out.println("Benz constructor called"); 
+        this.price = price; 
+    } 
+  
+    @Override
+    void autodrive() { 
+         System.out.println("Auto drive starts");
+    } 
+  
+    @Override
+    public String toString() { 
+        return "Benz color is " + super.color +  
+                       "and price is : " + price; 
+    } 
+}
+public class Test  
+{ 
+    public static void main(String[] args) 
+    { 
+        Car benz = new Benz("Red", 20000000); 
+          
+        System.out.println(benz.toString()); 
+    } 
+}
+
+
+
+
+
+
+
+
