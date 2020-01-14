@@ -1,0 +1,43 @@
+import java.util.*;
+interface outdoor_games
+{
+	 public void set_num_of_players(int num);
+	public void set_won_matches(int w);
+	public void set_lost_matches(int l);
+	public void set_team_name(String name);
+}
+class cricket implements outdoor_games
+{
+int num;
+int w;
+int l;
+String team_name;
+	public void set_num_of_players(int num)
+	{
+		this.num=num;
+	}
+	public void set_won_matches(int w);
+	{
+		this.w=w;
+	}
+	public void set_lost_matches(int l);
+	{
+		this.w=w;
+	}
+	public void set_team_name(String name);
+	{
+		this.w=w;
+	}
+}
+class tester
+{
+	public static void main(String Args[])
+	{
+	cricket c=new cricket();
+	c.set_num_of_players(11);
+	c.set_won_matches(5);
+	c.set_lost_matches(2);
+	c.set_team_name("MI");
+	}
+}
+	
