@@ -33,4 +33,9 @@ public class vehicle {
 	 w.set_direction("left");
  }
 }
-
+public class vehicle_driver {
+	public static void main(String Args[])
+	{
+		vehicle obj=new vehicle();
+	}
+}
