@@ -1,0 +1,32 @@
+using System;
+namespace Rextester
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            singleton o=singleton.getobj();
+            o.display();
+            
+        }
+    }
+    
+    sealed class singleton
+    {
+        
+        static int num=0;
+        private static singleton obj=new singleton();
+        private singleton()
+        {
+            num++;
+        }
+        public static singleton getobj()
+        {
+            return obj;
+        }
+        public void display()
+        {
+            Console.WriteLine(num);
+        }
+    }
+}
