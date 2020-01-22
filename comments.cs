@@ -23,8 +23,13 @@ namespace Comments
 /// </code></example>
 class factorial
     {
-        int f = 1;
+        int f;
+        /// <summary> The property represents the factorial result
+    ///</summary>
+        ///<value> Factorial of the number
+    ///</value>
         int i;
+         f=0;
         /// <summary>
         /// This method is to find factorial of a number
         /// </summary>
@@ -32,13 +37,14 @@ class factorial
         /// </param>
         /// <returns> It returns factorial of a number
         ///</returns>
+    
         public int fact(int a)
         {
             for(i=1;i<=a;i++)
             {
                 f = f * i;
             }
-            ///<value> f has the value of factorial</value>
+           
             return f;
         }
     }
