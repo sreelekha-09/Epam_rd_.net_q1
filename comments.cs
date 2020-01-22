@@ -24,10 +24,6 @@ namespace Comments
 class factorial
     {
         int f;
-        /// <summary> The property represents the factorial result
-    ///</summary>
-        ///<value> Factorial of the number
-    ///</value>
         int i;
          f=0;
         /// <summary>
