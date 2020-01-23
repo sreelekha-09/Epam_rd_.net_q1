@@ -1,46 +1,43 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-using Calculator_d;
-namespace Calci_test
+using Calculatorprogram;
+namespace Calculatortestprogram
 {
     [TestClass]
-    public class calci_test
+    public class Calculatortestclass
     {
+      
         [TestMethod]
-        public void TestMethod1()
+        public void Addmethodcheck()
         {
-        }
-
-        [TestMethod]
-        public void add_check()
-        {
-            calcu_d obj = new calcu_d();
+            Calculatorclass calculator = new Calculatorclass();
             int res;
-            res = obj.add(5, 2);
+            res = calculator.Add(5, 2);
             Assert.AreEqual(7, res);
         }
 
         [TestMethod]
-        public void sub_check()
+        public void Submethodcheck()
         {
-            calcu_d obj = new calcu_d();
+            Calculatorclass calculator = new Calculatorclass();
             int res;
-            res = obj.subtract(7, 2);
+            res = calculator.Subtract(7, 2);
             Assert.AreEqual(5, res);
         }
-        public void mul_check()
+       [TestMethod]
+        public void Multiplymethodcheck()
         {
-            calcu_d obj = new calcu_d();
+            Calculatorclass calculator = new Calculatorclass();
             int res;
-            res = obj.multiply(16, 2);
+            res = calculator.Multiply(16, 2);
             Assert.AreEqual(32, res);
         }
         [TestMethod]
-        public void div_check()
+        public void Divisonmethodcheck()
         {
-            calcu_d obj = new calcu_d();
+            Calculatorclass calculator = new Calculatorclass();
             //int res;
-            Assert.ThrowsException<System.ArithmeticException>(() => obj.divide(5,0));         
+            Assert.ThrowsException<System.ArithmeticException>(() => calculator.Divide(5,0));         
         }
     }
 }
