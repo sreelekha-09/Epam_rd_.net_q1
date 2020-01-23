@@ -1,45 +1,72 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculator_d
+namespace Calculatorprogram
 {
-    public class calcu_d
+    /// <summary>
+    /// This class performs calculator operations
+    /// </summary>
+    /// <remarks>
+    /// This class performs addition, subtraction, multiplication, division
+    /// </remarks>
+    public class Calculatorclass
     {
-        public int add(int operand_1, int operand_2)
+        /// <summary>
+        /// This method performs addition operation
+        /// </summary>
+        /// <param name="operand 1">this is operand 1</param>
+        /// <param name="operand 2">this is operand 2</param>
+        /// <returns>it returns the addition of two numbers</returns>
+        public int Add(int operand1, int operand2)
         {
-            return operand_1 + operand_2;
+            return operand1 + operand2;
         }
 
 
-
-        public int subtract(int operand_1, int operand_2)
+        /// <summary>
+        /// This method performs subtraction operation
+        /// </summary>
+        /// <param name="operand 1">this is operand 1</param>
+        /// <param name="operand 2">this is operand 2</param>
+        /// <returns> it returns the difference of two numbers</returns>
+        public int Subtract(int operand1, int operand2)
         {
 
-            return operand_1 - operand_2;
+            return operand1 - operand2;
         }
 
+        /// <summary>
+        /// This method performs multiplication operation
+        /// </summary>
+        /// <param name="operand 1">this is operand 1</param>
+        /// <param name="operand 2">this is operand 2</param>
+        /// <returns>it returns the product of two numbers</returns>
 
-
-        public int multiply(int operand_1, int operand_2)
+        public int Multiply(int operand1, int operand2)
         {
 
-       return operand_1 * operand_2;
+       return operand1 * operand2;
 
         }
 
+        /// <summary>
+        /// This method performs division operation
+        /// </summary>
+        /// <param name="operand 1">this is operand 1</param>
+        /// <param name="operand 2">this is operand 2</param>
+        /// <returns>it returns the division of two numbers</returns>
 
-
-        public int divide(int operand_1, int operand_2)
+        public int Divide(int operand1, int operand2)
         {
 
-            if (operand_2 == 0)
+            if (operand2 == 0)
             {
-                throw new ArithmeticException("00000");
+                throw new ArithmeticException("Arithmetic exception");
             }
-            return operand_1 / operand_2;
+            return operand1 / operand2;
 
         }
     }
